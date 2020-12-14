@@ -1,0 +1,43 @@
+
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  box-shadow: 0 0 4px 0px grey;
+  border-radius: 4px;
+  padding: 16px;
+} 
+
+.tabs .tabs-header {
+  position: relative;
+  display: flex;
+  font-size: 13px;
+  color: #252525;
+  line-height: 1.5;
+  font-weight: 500;
+  border-bottom: 3px solid #d4d4d4;
+} 
+.tabs .line {
+  position: absolute;
+  top: 100%;
+  transform: translateX(0);
+  width: 50px;
+  height: 3px;
+  background: #3b8bf0;
+  transition: all 0.5s;/*增加了动画*/
+}
+.tabs .tabs-items {
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.tabs .tabs-items.active {
+
+}
+.tabs .tabs-son{
+  padding: 16px 0;
+  font-size: 40px;
+  display: none;
+}
+.tabs .tabs-son.active{
+  display: block;
+}
